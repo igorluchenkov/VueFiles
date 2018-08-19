@@ -1,0 +1,39 @@
+.FilesInput
+	display none
+	&-label
+		position fixed
+		width 100vw
+		height 100vh
+		top 0
+		left 0
+		pointer-events none
+		z-index 3
+	&-wrapper
+		font-size 20px
+		color #707070
+		max-width 1150px
+		width 100%
+		height calc(100% - 156px)
+		display flex
+		align-items center
+		justify-content center
+		flex-direction column
+		background-color #f2f2f2
+		user-select none
+		opacity 0
+		pointer-events none
+		transition 0.2s
+		position absolute
+		z-index 2
+		&-active
+			pointer-events all
+			opacity 1
+			.FilesInput
+				&-label
+					pointer-events all
+		&__description
+			margin-top 30px
+			text-align center
+			font-size 16px
+			line-height 24px
+			max-width 500px
